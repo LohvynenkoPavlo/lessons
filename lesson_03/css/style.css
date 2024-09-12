@@ -1,0 +1,19 @@
+@import url("reset.css");
+a {
+    color: blue;
+}
+h1 {
+    color: orangered;
+}
+#polissya-east h2 mark{
+    color: red;
+}
+main p {
+    color: rgb(107, 21, 21);
+}
+.west-ukraine p {
+    color: coral;
+}
+[class*="he"] {
+    color: green;
+}
