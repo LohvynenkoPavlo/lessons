@@ -116,3 +116,7 @@
     line-height: 32px; /* 200% */
     text-align: left;
 }
+.features__content li {
+    background: url(../img/check.svg)0 0 / 25px no-repeat;
+    padding-left: 50px;
+}
