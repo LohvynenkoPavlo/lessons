@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Manrope:regular,600,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Epilogue&display=swap");
 
 @import url(reset.css);
 
@@ -44,7 +44,6 @@
 }
 .btn {
     display: inline-block;
-
     background-color: #E50000;
     padding: 18px 24px;
     border-radius: 8px;
@@ -52,4 +51,68 @@
     font-size: 18px;
     font-weight: 600;
     line-height: 150%; /* 27px */
+}
+
+
+
+.features__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15px 0 15px;
+}
+.features {
+    min-height: 950px;
+    padding: 215px 0 202px 0;
+    background: #FDF0E9;
+    font-family: Epilogue;
+}
+.features__wrapper {
+    display: inline-block;
+}
+.features__content, .features__img {
+    display: inline-block; 
+    width: 48%;
+    vertical-align: top; 
+}
+.wrap {
+    padding-right: 171px;
+}
+/* .features__img {
+    display: inline-block;
+    vertical-align: bottom;
+}     */
+.features__subtitle {
+    color: #EF6D58;
+    text-align-last: left;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.features__title {
+    margin: 0 auto;
+    color:  #391400;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 64px; /* 114.286% */
+    max-width: 390px;
+    margin-bottom: 26px;
+    text-align: left;
+}
+.features__descr {
+    color: #391400;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    margin-bottom: 26px;
+    text-align: left;
+}
+.features__list {
+    color: rgba(57, 20, 0, 0.64);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px; /* 200% */
+    text-align: left;
 }
