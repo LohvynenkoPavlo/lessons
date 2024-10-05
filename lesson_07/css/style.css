@@ -188,7 +188,9 @@ header {
     line-height: 42px; /* 175% */
 }
 
-
+.game {
+    padding: 50px;
+}
 .game__wrapper {
     width: 1000px; 
     background-color: white;
