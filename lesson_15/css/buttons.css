@@ -1,0 +1,44 @@
+.button {
+    width: 170px;
+    height: 48px;
+    text-align: center;
+    display: block;
+    padding-top: 9px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s;
+    margin: 0 auto;
+    color: #FFF;
+}
+.contact-button {
+    width: 154px;
+    height: 48px;
+    padding: 10px 32px;
+    border-radius: 6px;
+    background-color: #EF6D58;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: transform 0.5s , background-color 0.5s;
+
+}
+@media (any-hover: hover){
+    .button:hover {
+        background-color: #B550F8;
+    }
+    .contact-button:hover{
+        transform: scale(1.05);
+    }
+}
+.button:active {
+    transform: scale(0.95); 
+    background-color:rgba(255, 255, 255, 0.2); 
+}
+.contact-button:active{
+    transform: scale(0.9);
+    background-color:#d85c49;
+}
