@@ -11,7 +11,7 @@
 .wrapper {
     min-height: 100%;
     overflow: clip;
-    background: #28293E;
+    background-color: #28293E;
     display: flex;
     flex-direction: column;
     font-family: Epilogue;
