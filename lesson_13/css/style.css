@@ -389,12 +389,20 @@
     gap: 30px;
     flex-wrap: wrap;
     margin-bottom: 64px;
+    min-width: 329px
 }
 .events__list-item {
-    padding: 41px 40px 36px 40px;
+    padding: 40px;
     border-radius: 6px;
     border: 1px solid #3A3C56;
-    flex: 0 1 370px;
+    flex: 1 0 370px;
+    display: flex;
+    flex-direction: column;
+}
+.events__day {
+    border-block-end: 1px solid #3A3C56;
+    margin-bottom: 40px;
+
 }
 .events__day-header {
     font-size: 24px;
@@ -419,14 +427,14 @@
 .events__time{
     margin-bottom: 36px;
 }
-.events__day::after {
+/* .events__day::after {
     content: "";
     width: 280px;
     height: 1px;
     flex-shrink: 0;
     background: #3A3C56;
     margin-bottom: 40px;
-}
+} */
 .events__time::before {
     content: "";
     width: 16px;
@@ -435,6 +443,7 @@
     margin-right: 8px;
 }
 .events__description {
+    flex-grow: 1;
 }
 .events__description-title {
     font-size: 24px;
@@ -447,6 +456,7 @@
     margin-bottom: 26px;
 }
 .events__link {
+
     transition: text-decoration 0.3s;
 }
 @keyframes pulse {
@@ -467,13 +477,22 @@
         color: #EF6D58;
     }
 }
+@media (max-width: 410.98px) {
+    .events__list-item {
+        padding: 40px 28px;
+        flex: 1 0 320px;
+    }
+}
+@media (max-width: 360.98px) {
+    .events__list-item {
+        flex: 0 0 290px;
+    }
+}
 
 /*------------*/
 
 .team {
     padding: 70px 0 60px 0;
-}
-.team__container {
 }
 .team__header {
     display: flex;
@@ -502,6 +521,11 @@
     transition: background-color 0.3s;
     cursor: pointer;
 }
+@media (max-width: 768.98px){
+    .team__arrow {
+        display: none;
+    }
+}
 @media (any-hover: hover){
     .team__arrow:hover {
         background-color: #B550F8;
@@ -509,27 +533,33 @@
 }
 .team__members {
     display: flex;
-    flex-wrap: wrap;
-
+    /* flex-wrap: wrap; */
     justify-content: center;
     column-gap: 30px;
     row-gap: 15px;
     margin-bottom: 52px;
+    overflow-x: auto; /* Добавляет горизонтальную прокрутку */
+    scroll-snap-type: x mandatory;
 }
 .team__member {
     overflow: hidden;
-    flex: 1 1 270px;
+    flex: 0 0 270px;
 
 }
 .team__member-photo {
+    position: relative;
     border-radius: 6px;
     border: 1px solid #3A3C56;
-    width: 270px;
-    height: 272px;
+    max-width: 270px;
+    min-height: 272px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 26px;
+}
+.team__member-photo img {
+    max-width: 100%;
+    overflow: hidden;
 }
 .team__dots {
     display: flex;
@@ -631,22 +661,8 @@
     .founder__content {
         max-width: 470px;
     }
-    /* .founder__photo img {
-        width: 80%;
-    } */
-}
-
-.title-block {
-}
-.title-block__subtitle {
-}
-.title-block__title {
-}
-.team__member-employee {
-}
-.employee {
-}
-.employee__name {
-}
-.employee__role {
+    .founder__photo img {
+        max-width: 100%;
+        overflow: hidden;
+    }
 }
