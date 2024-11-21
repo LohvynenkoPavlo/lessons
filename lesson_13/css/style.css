@@ -11,7 +11,7 @@
 .wrapper {
     min-height: 100%;
     overflow: clip;
-    background-color: #28293E;
+    background: #28293E;
     display: flex;
     flex-direction: column;
     font-family: Epilogue;
@@ -47,22 +47,22 @@
 .portfolio__title {
     margin-bottom: 44px;
 }
-.portfolio-menu {
+.portfolio__menu {
     margin-bottom: 68px;
 }
-.portfolio-menu__items {
+.portfolio__menu-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 60px;
 }
-.portfolio-menu__item {
+.portfolio__menu-item {
     color:  rgba(255, 255, 255, 0.64);
     transition: all 0.3s;
     cursor: pointer;
 }
 @media (any-hover: hover){
-    .portfolio-menu__item:hover {
+    .portfolio__menu-item:hover {
         color: #fff ;
     }
 }
@@ -94,12 +94,12 @@
         transform: translateY(-5px);
     }
 }
-.portfolio__card:nth-child(5n + 2),
-.portfolio__card:nth-child(5n + 3){
+.portfolio__card:nth-child(4n + 2),
+.portfolio__card:nth-child(4n + 3){
     flex-basis: 670px;
 }
-.portfolio__card:nth-child(5n + 2),
-.portfolio__card:nth-child(5n + 3){
+.portfolio__card:nth-child(4n + 2),
+.portfolio__card:nth-child(4n + 3){
     aspect-ratio: 670 / 416;
 }
 .portfolio__card-background {
@@ -586,8 +586,12 @@
     column-gap: 130px;
     row-gap: 30px;
 }
+.founder__photo {
+    border: 0px solid #3A3C56;
+}
 .founder__photo img {
     width: 100%;
+    height: auto;
 }
 .founder__content {
     position: relative;

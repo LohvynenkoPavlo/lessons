@@ -1,10 +1,10 @@
 .button {
-    width: 170px;
-    height: 48px;
     text-align: center;
-    display: block;
-    padding-top: 9px;
+    /* padding-top: 9px; */
     font-weight: 900;
+    font-size: 14px;
+    padding: 16px 30px;
+    line-height: normal;
     text-transform: uppercase;
     border-radius: 6px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -12,9 +12,10 @@
     margin: 0 auto;
     color: #FFF;
 }
+.button-wrapper {
+    text-align: center;
+}
 .contact-button {
-    width: 154px;
-    height: 48px;
     padding: 10px 32px;
     border-radius: 6px;
     background-color: #EF6D58;
