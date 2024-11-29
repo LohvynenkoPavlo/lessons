@@ -140,7 +140,7 @@
     width:24px;
     height: 24px;
 }
-.movies__wrapper{
+.movies__wrapper-stars{
     display: flex;
     column-gap: 2px;
     object-fit: cover;
