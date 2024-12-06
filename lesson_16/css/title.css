@@ -1,0 +1,28 @@
+.title-block {
+}
+.title-block__label {
+    color: #EF6D58;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.title-block__title {
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+@media (max-width: 768.98px){
+    .title-block__label {
+    }
+    .title-block__title {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: -1px;
+    }
+    .title-block__title br {
+        display: none;
+    }
+    
+}
