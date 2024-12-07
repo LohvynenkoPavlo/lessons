@@ -108,14 +108,13 @@
     height: 53.508772%;
     background-color: #b550f8;
     border-radius: 50% 50% 6px 6px / 41% 41% 6px 6px;
-    overflow: hidden;
 }
 .hero__image-laptop {
     position: absolute;
     bottom: 6%;
     left: 8%;
     object-fit: cover;
-    
+
 }
 
 .hero__image-star-bg {
