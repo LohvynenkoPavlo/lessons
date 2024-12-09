@@ -39,14 +39,19 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    /* aspect-ratio: 1 ; */
-    /* width: 48px;
-    height: 48px; */
+    aspect-ratio: 1 ;
+    width: 48px;
+    height: 48px;
     /* flex-basis: 48px; */
     flex: 0 0 48px;
     border-radius: 50%;
     background-color: #B550F6;;
     overflow: hidden;
+}
+.hero__testimonial-avatar img{
+    max-width: 38px;
+    max-height: 43px;
+    object-fit: cover;
 }
 .hero__testimonial--img {
     max-width: 100%;
@@ -169,15 +174,20 @@
     }
     .hero__image {
         position: relative;
-        flex: 1 0 329px;
-        aspect-ratio: 1;
-        height: 100%;
-    }
+        flex: 0 1 570px;
+        max-width: 570px;
+        align-self: center;
+    } 
 }
 @media (max-width: 768.98px){
     .hero {
         padding: 23px 0 32px 0;
     }
+}
+@media (max-width: 552px){
+    .hero__image {
+        flex: 0 1 330px;
+    } 
 }
 
 @media (max-width: 442.98px){

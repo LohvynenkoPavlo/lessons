@@ -1,4 +1,5 @@
 .actions__button {
+    display: none;
     /* min-width: 138px;
     min-height: 48px; */
     color: #FFF;
