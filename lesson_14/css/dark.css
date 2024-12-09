@@ -82,6 +82,7 @@
 }
 .darck__button {
     flex:0 0 173px;
+    aspect-ratio: 173 / 63;
     border-radius: 8px;
     background:  #E50000;
     transition:  background-color,transform 0.3s;
@@ -114,7 +115,7 @@
     }
     .darck__button {
         flex:0 0 138px;
-        min-height: 49px;
+        aspect-ratio: 138 / 49;
         font-size: 14px;
     }
     .dark__label:not(:last-child){
@@ -126,6 +127,10 @@
         column-gap: 20px;
         row-gap: 20px;
     } 
+    .dark__checkbox {
+        align-items: flex-start;
+        width: 100%;
+    }
     .dark__item {
         flex-basis: 100%;
     }
