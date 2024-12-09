@@ -80,7 +80,7 @@
     border: 1px solid  #262626;
     background: #0F0F0F;
 }
-.darck__button {
+.dark__button {
     flex:0 0 173px;
     aspect-ratio: 173 / 63;
     border-radius: 8px;
@@ -92,7 +92,7 @@
         background-color: #ff0404;;
     }
 }
-.darck__button:active {
+.dark__button:active {
     transform: scale(0.98);
 }
 
@@ -140,7 +140,7 @@
     .dark__textarea {
         min-height: 109px;
     }
-    .darck__button {
+    .dark__button {
         flex:0 0 49px;
         min-height: 49px;
         font-size: 14px;
