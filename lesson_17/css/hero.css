@@ -1,0 +1,9 @@
+.hero {
+    background-color: #28293E;
+    padding-top: 6.5rem; /* 104px = 6.5rem */
+    padding-bottom: 4.125rem; /* 66px = 4.125rem */
+}
+.hero__title {
+    margin: 0 auto;
+    max-width: 35.625rem; /* 570px = 35.625rem */
+}

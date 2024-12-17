@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>lesson </title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<img class="header__logo" src="img/logo.svg" alt="logo">
+				<nav class="header__menu menu">
+
+					<div class="menu__body">
+
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">About</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Services</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Pricing</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Blog</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<div class="header__actions actions">
+					<a href="#" class="actions__button button-contact">Contact</a>
+					<button class=" actions__icon icon-menu " type="button"><span></span></button>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<div class="hero">
+				<div class="hero__container">
+					<div class="hero__title title-block">
+						<h1 class="title-block__title">Portfolio</h1>
+						<p class="title-block__description">
+							Agency provides a full service range including technical skills, design, business understanding.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="gallery">
+				<div class="gallery__container">
+					<ul class="gallery__links">
+						<li class="gallery__item">
+							<a href="#" class="gallery__link" data-count="14">Show All </a>
+						</li>
+						<li class="gallery__item">
+							<a href="#" class="gallery__link" data-count="6">Design</a>
+						</li>
+						<li class="gallery__item">
+							<a href="#" class="gallery__link" data-count="4">Branding</a>
+						</li>
+						<li class="gallery__item">
+							<a href="#" class="gallery__link" data-count="3">Illustration</a>
+						</li>
+						<li class="gallery__item">
+							<a href="#" class="gallery__link" data-count="1">Motion</a>
+						</li>
+					</ul>
+					
+					
+					<form action="#" class="gallery__form dropdown">
+						<select class="dropdown__select">
+							<option value="all" selected>Show All</option>
+							<option value="design">Design</option>
+							<option value="branding">Branding</option>
+							<option value="illustration">Illustration</option>
+							<option value="motion">Motion</option>
+						</select>
+					</form>
+
+					<div class="gallery__cards">
+						<a href="#" class="gallery__card">
+							<picture>
+								<source media="(min-width: 479px)" srcset="img/01.webp">
+								<source media="(max-width: 478px)" srcset="img/01-mob.webp">
+								<img src="img/01.webp" alt="card">
+							</picture>
+							<div class="gallery__label">Branding</div>
+							<h3 class="gallery__title">KeyBoard</h3>
+						</a>
+						<a href="#" class="gallery__card">
+							<picture>
+								<source media="(min-width: 479px)" srcset="img/02.webp">
+								<source media="(max-width: 478px)" srcset="img/02-mob.webp">
+								<img src="img/02.webp" alt="card">
+							</picture>
+							<div class="gallery__label">Design</div>
+							<h3 class="gallery__title">SOFA</h3>
+						</a>
+						<a href="#" class="gallery__card">
+							<picture>
+								<source media="(min-width: 479px)" srcset="img/03.webp">
+								<source media="(max-width: 478px)" srcset="img/03-mob.webp">
+								<img src="img/03.webp" alt="card">
+							</picture>
+							<div class="gallery__label">Illustration</div>
+							<h3 class="gallery__title">Work Media</h3>
+						</a>
+						<a href="#" class="gallery__card">
+							<picture>
+								<source media="(min-width: 479px)" srcset="img/04.webp">
+								<source media="(max-width: 478px)" srcset="img/04-mob.webp">
+								<img src="img/04.webp" alt="card">
+							</picture>
+							<div class="gallery__label">Motion</div>
+							<h3 class="gallery__title">DDDone</h3>
+						</a>
+						<a href="#" class="gallery__card">
+							<picture>
+								<source media="(min-width: 479px)" srcset="img/05.webp">
+								<source media="(max-width: 478px)" srcset="img/05-mob.webp">
+								<img src="img/05.webp" alt="card">
+							</picture>
+							<div class="gallery__label">Branding</div>
+							<h3 class="gallery__title">HandP</h3>
+						</a>
+					</div>
+
+					<div class="gallery__actions">
+						<button type="button" class="gallery__button gallery__button-active">1</button>
+						<button type="button" class="gallery__button">2</button>
+						<button type="button" class="gallery__button">3</button>
+						<button type="button" class="gallery__button">4</button>
+						<button type="button" class="gallery__button">5</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio-grid">
+				<div class="portfolio-grid__container">
+					<div class="portfolio-grid__title title-block">
+						<div class="title-block__label">Portfolio</div>
+						<h2 class="title-block__title">Latest Work</h2>
+					</div>
+	
+					<ul class="portfolio-grid__links filter-menu">
+						<li class="filter-menu__item">
+							<a href="#" class="filter-menu__link" data-count="14">Show All </a>
+						</li>
+						<li class="filter-menu__item">
+							<a href="#" class="filter-menu__link" data-count="6">Design</a>
+						</li>
+						<li class="filter-menu__item">
+							<a href="#" class="filter-menu__link" data-count="4">Branding</a>
+						</li>
+						<li class="filter-menu__item">
+							<a href="#" class="filter-menu__link" data-count="3">Illustration</a>
+						</li>
+						<li class="filter-menu__item">
+							<a href="#" class="filter-menu__link" data-count="1">Motion</a>
+						</li>
+					</ul>
+
+					<form action="#" class="portfolio-grid__form dropdown">
+						<select class="dropdown__select">
+							<option value="all" selected>Show All</option>
+							<option value="design">Design</option>
+							<option value="branding">Branding</option>
+							<option value="illustration">Illustration</option>
+							<option value="motion">Motion</option>
+						</select>
+					</form>
+	
+					<div class="portfolio-grid__cards">
+						<a href="#" class="portfolio-grid__card">
+							<picture>
+								<source media="(min-width: 479px)" srcset="img/02.webp">
+								<source media="(max-width: 478px)" srcset="img/02-mob.webp">
+								<img src="img/02.webp" alt="card">
+							</picture>
+							<div class="portfolio-grid__label">Design</div>
+							<h3 class="portfolio-grid__title">SOFA</h3>
+						</a>
+						<a href="#" class="portfolio-grid__card">
+							<picture>
+								<source media="(min-width: 479px)" srcset="img/02-grid.webp">
+								<source media="(max-width: 478px)" srcset="img/02-grid-mob.webp">
+								<img src="img/02-grid.webp" alt="card">
+							</picture>
+							<div class="portfolio-grid__label">Branding</div>
+							<h3 class="portfolio-grid__title">KeyBoard</h3>
+						</a>
+						<a href="#" class="portfolio-grid__card">
+							<picture>
+								<source media="(min-width: 479px)" srcset="img/03.webp">
+								<source media="(max-width: 478px)" srcset="img/04-mob.webp">
+								<img src="img/03.webp" alt="card">
+							</picture>
+							<div class="portfolio-grid__label">Illustration</div>
+							<h3 class="portfolio-grid__title">Work Media</h3>
+						</a>
+						<a href="#" class="portfolio-grid__card portfolio-grid__card--mob">
+							<picture>
+								<source media="(min-width: 479px)" srcset="img/04.webp">
+								<source media="(max-width: 478px)" srcset="img/03-mob.webp">
+								<img src="img/04.webp" alt="card">
+							</picture>
+							<div class="portfolio-grid__label">Motion</div>
+							<h3 class="portfolio-grid__title">DDDone</h3>
+						</a>
+					</div>
+
+					<a href="#" class="portfolio-grid__button button-contact">Explore More</a>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>

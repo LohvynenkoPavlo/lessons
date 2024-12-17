@@ -1,0 +1,29 @@
+.title-block {
+}
+.title-block__title {
+    text-align: center;
+    font-size: 4.5rem; /* 72px = 4.5rem */
+    font-weight: 800;
+    line-height: 1.1; /* 111.111% */
+    letter-spacing: -0.125rem; /* -2px = -0.125rem */
+    margin-bottom: 1.5rem; /* 24px = 1.5rem */
+}
+
+.title-block__description {
+    color: rgba(255, 255, 255, 0.64);
+    text-align: center;
+}
+
+.title-block__label {
+    color: #EF6D58;
+    text-align: center;
+    letter-spacing: 0.1875rem; /* 3px = 0.1875rem */
+    text-transform: uppercase;
+    margin-bottom: 1.25rem; /* 20px = 1.25rem */
+}
+
+@media (max-width: 768.98px) {
+    .title-block__title {
+        font-size: 3.5rem; /* Уже в rem, оставляем */
+    }
+}

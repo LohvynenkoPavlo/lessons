@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Epilogue:regular,700,800,900&display=swap");
+
+@import url('header.css');
+@import url('title.css');
+@import url('button.css');
+@import url('filter-menu.css');
+@import url('hero.css');
+@import url('gallery.css');
+@import url('portfolio-grid.css');
+@import url('reset.css');
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    font-family: Epilogue;
+    font-weight: 400;
+    line-height: 2;
+    color: #FFF;
+}
+.wrapper > main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 75rem; /* 1200px = 75rem */
+    padding-inline: 0.9375rem; /* 15px = 0.9375rem */
+    margin: 0 auto;
+}
