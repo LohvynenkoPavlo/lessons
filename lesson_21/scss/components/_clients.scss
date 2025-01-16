@@ -1,5 +1,6 @@
 .clients {
     position: relative;
+    // background-color: #FFFBF6;
     padding: toRem(100) toRem(0) toRem(100) toRem(0);
     @media (max-width: toEm(1024)){
         padding: toRem(70) toRem(0) toRem(70) toRem(0);
@@ -21,8 +22,21 @@
         display: grid;
         grid-template-columns: repeat(6, minmax(toRem(180), toRem(200)));
         grid-template-rows: minmax(toRem(180), toRem(200));
+        grid-auto-rows: minmax(toRem(180), toRem(200));
         column-gap: toRem(24);
-        // row-gap: toRem(0);
+        @media (max-width: toEm(1220)){
+            grid-template-columns: repeat(3, minmax(toRem(180), 1fr)); 
+        }
+        @media (max-width: toEm(768)){
+            grid-template-columns: repeat(2, minmax(toRem(180), 1fr));
+            grid-template-rows:  toRem(150);
+            grid-auto-rows:  toRem(150); 
+        }
+        @media (max-width: toEm(425)){
+            grid-template-columns: repeat(1, minmax(toRem(180), 1fr));
+            grid-template-rows: repeat(6, toRem(80)) ;
+            grid-auto-rows:  toRem(80); 
+        }
     }
 
     &__icon {
@@ -69,6 +83,48 @@
             &:hover .clients__icon-link-arrow path {
                 fill: #FF9900;
             }
+        }
+        @media (max-width: toEm(768)){
+            .clients__icon-link-g path {
+                fill: #4285F4;
+            }
+            
+            .clients__icon-link-o-1 path {
+                fill: #EA4335;
+            }
+            
+            .clients__icon-link-o-2 path {
+                fill: #FBBC05;
+            }
+            
+            .clients__icon-link-g-littel path {
+                fill: #4285F4;
+            }
+            
+            .clients__icon-link-l path {
+                fill: #34A853;
+            }
+            
+            .clients__icon-link-e path {
+                fill: #EA4335;
+            }
+            
+            .clients__icon-link-wrapper {
+                background-color: #069;
+            }
+            
+            .clients__icon-link-linked path,
+            .clients__icon-link-amazon path,
+            .clients__icon-link-dribbble path,
+            .clients__icon-link-medium path,
+            .clients__icon-link-spotify path {
+                fill: black;
+            }
+            
+            .clients__icon-link-arrow path {
+                fill: #FF9900;
+            }
+             
         }
     }
 

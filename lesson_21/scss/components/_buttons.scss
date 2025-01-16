@@ -8,7 +8,16 @@
       content: '';
       width: toRem(12);
       height: toRem(12);
-      background: url(../../icons/button/arrow-white.svg)center center/cover no-repeat;
+      background: url(../icons/button/arrow-white.svg)center center/cover no-repeat;
+      margin-left: toRem(12);
+    }
+  }
+  &-form {
+    &::after {
+      content: '';
+      width: toRem(20);
+      height: toRem(20);
+      background: url(../icons/button/form-arrow.svg)center center/cover no-repeat;
       margin-left: toRem(12);
     }
   }
@@ -21,7 +30,7 @@
       content: '';
       width: toRem(24);
       height: toRem(24);
-      background: url(../../icons/button/download.svg)center center/cover no-repeat;
+      background: url(../icons/button/download.svg)center center/cover no-repeat;
     }
   }
   &--after {
@@ -29,7 +38,7 @@
       content: '';
       width: toRem(12);
       height: toRem(12);
-      background: url(../../icons/button/arrow.svg)center center/cover no-repeat;
+      background: url(../icons/button/arrow.svg)center center/cover no-repeat;
     }
   }
 }
