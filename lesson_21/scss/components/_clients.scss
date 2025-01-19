@@ -24,16 +24,18 @@
         grid-template-rows: minmax(toRem(180), toRem(200));
         grid-auto-rows: minmax(toRem(180), toRem(200));
         column-gap: toRem(24);
+        row-gap: toRem(50);
         @media (max-width: toEm(1220)){
-            grid-template-columns: repeat(3, minmax(toRem(180), 1fr)); 
+            grid-template-columns: repeat(3, minmax(toRem(180), toRem(200))); 
+            justify-content: space-around;
         }
         @media (max-width: toEm(768)){
-            grid-template-columns: repeat(2, minmax(toRem(180), 1fr));
+            grid-template-columns: repeat(2, minmax(toRem(180), toRem(200)));
             grid-template-rows:  toRem(150);
             grid-auto-rows:  toRem(150); 
         }
         @media (max-width: toEm(425)){
-            grid-template-columns: repeat(1, minmax(toRem(180), 1fr));
+            grid-template-columns: repeat(1, minmax(toRem(180), toRem(200)));
             grid-template-rows: repeat(6, toRem(80)) ;
             grid-auto-rows:  toRem(80); 
         }
@@ -43,6 +45,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
         path {
             transition: fill 0.3s ease;
         }

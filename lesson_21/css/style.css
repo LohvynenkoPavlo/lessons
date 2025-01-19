@@ -1761,22 +1761,25 @@ table {
   -webkit-column-gap: 1.5rem;
      -moz-column-gap: 1.5rem;
           column-gap: 1.5rem;
+  row-gap: 3.125rem;
 }
 @media (max-width: 76.25em) {
   .clients__icons {
-    grid-template-columns: repeat(3, minmax(11.25rem, 1fr));
+    grid-template-columns: repeat(3, minmax(11.25rem, 12.5rem));
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media (max-width: 48em) {
   .clients__icons {
-    grid-template-columns: repeat(2, minmax(11.25rem, 1fr));
+    grid-template-columns: repeat(2, minmax(11.25rem, 12.5rem));
     grid-template-rows: 9.375rem;
     grid-auto-rows: 9.375rem;
   }
 }
 @media (max-width: 26.5625em) {
   .clients__icons {
-    grid-template-columns: repeat(1, minmax(11.25rem, 1fr));
+    grid-template-columns: repeat(1, minmax(11.25rem, 12.5rem));
     grid-template-rows: repeat(6, 5rem);
     grid-auto-rows: 5rem;
   }
@@ -1791,6 +1794,7 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 .clients__icon path {
   -webkit-transition: fill 0.3s ease;
