@@ -41,7 +41,7 @@
         grid-template-columns: repeat(4, minmax(toRem(300), 1fr));
         column-gap: toRem(24);
         &:not(:last-child) {margin-bottom: toRem(24);}
-        overflow: auto
+        overflow-y: auto;
     }
 
     &__dots {

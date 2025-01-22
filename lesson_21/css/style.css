@@ -1484,7 +1484,6 @@ table {
 }
 .cards__item {
   border: 0.0625rem solid #E6E8EB;
-  border-radius: 0.5rem 0.5rem 0px 0px;
   border-radius: 8px;
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
@@ -1596,7 +1595,7 @@ table {
   -webkit-column-gap: 1.5rem;
      -moz-column-gap: 1.5rem;
           column-gap: 1.5rem;
-  overflow: auto;
+  overflow-y: auto;
 }
 .blog__card:not(:last-child) {
   margin-bottom: 1.5rem;
@@ -2034,6 +2033,18 @@ table {
     margin-bottom: 2.125rem;
   }
 }
+.testimonial__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.75rem;
+}
 .testimonial__dot {
   width: 0.5rem;
   height: 0.5rem;
@@ -2189,7 +2200,7 @@ table {
   line-height: 1.5; /* 150% */
 }
 .contact__detail-text strong {
-  color: Gray-700;
+  color: #556070;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.42; /* 142.857% */

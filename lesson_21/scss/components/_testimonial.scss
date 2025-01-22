@@ -76,7 +76,12 @@
             &:not(:last-child) {margin-bottom: toRem(34);} 
        }
     }
-
+    &__dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: toRem(12);
+    }
     &__dot {
         width: toRem(8);
         height: toRem(8);

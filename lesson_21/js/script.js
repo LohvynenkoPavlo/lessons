@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.header__menu-list');
 
   burger.addEventListener('click', () => {
-    // Переключаем классы активности
+
     burger.classList.toggle('header__burger--active');
     menu.classList.toggle('header__menu-list--active');
 
-    if (menu.classList.contains('header__menu--active')) {
+    if (menu.classList.contains('header__menu-list--active')) {
       document.body.style.overflow = 'hidden'; 
     } else {
       document.body.style.overflow = ''; 
